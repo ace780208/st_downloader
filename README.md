@@ -28,7 +28,7 @@ st_downloader/
 └── README.md
 
 ---
-📖 Usage
+##📖 Usage
 This package is designed to be imported into your existing Python workflows. Below is the standard implementation for downloading and converting data:
 
 <pre>
@@ -52,7 +52,7 @@ osm_path = engine.download()
 engine.osm_to_geojson("output.geojson", osm_path)
 </pre>
 ---
-🧪 Testing
+##🧪 Testing
 The package includes a test suite that verifies the parsing logic and network triggers using mocks. No internet connection is required to run tests.
 
 <pre>
@@ -61,12 +61,12 @@ The package includes a test suite that verifies the parsing logic and network tr
 python -m unittest tests.test_osm
 </pre>
 ---
-🏗 Implementation Details
+##🏗 Implementation Details
 Streaming IO: Uses shutil.copyfileobj to pipe data from the web response directly to the disk, preventing memory crashes regardless of file size.
 
 Event-Based Parsing: The osm_to_geojson function processes XML elements one by one, clearing them from memory immediately after they are used.
 
 User-Agent Management: Includes a default header to ensure compatibility with Overpass API security policies.
 
-📜 License
+##📜 License
 Available under the MIT License.
