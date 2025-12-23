@@ -1,0 +1,29 @@
+# --- Data & Outputs ---
+# Ignore the downloads folder where .osm files are stored
+downloads/
+# Ignore any converted GeoJSON files
+*.geojson
+# Ignore any raw OSM files in the root
+*.osm
+
+# --- Python Environment ---
+# Ignore compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environments
+venv/
+env/
+.env
+.venv/
+
+# --- IDE & System ---
+# VS Code settings
+.vscode/
+# PyCharm settings
+.idea/
+# macOS system files
+.DS_Store
+# Windows thumbnail cache
+Thumbs.db
